@@ -1,15 +1,15 @@
 # jee 
 **jee** (json expression evaluator) transforms JSON  through logical and mathematical expressions. jee can be used from the command line or as a Go package. It is inspired by the fantastic (and much more fully featured) [jq]("http://stedolan.github.io/jq/"). 
 
-jee was created out of the need for a simple JSON query language in [streamtools]("https://github.com/nytlabs/streamtools/"). jee is designed for stream processing and provides a reusable token tree. 
+jee was created out of the need for a simple JSON query language in [streamtools]("https://github.com/nyxwulf/streamtools/"). jee is designed for stream processing and provides a reusable token tree. 
 
 ####get the library
 
-    go get github.com/nytlabs/gojee
+    go get github.com/nyxwulf/gojee
 
 ####make and install the binary
 
-    cd $gopath/src/github.com/nytlabs/gojee/jee
+    cd $gopath/src/github.com/nyxwulf/gojee/jee
     go install
 
 
@@ -189,5 +189,6 @@ evaluates a variable of type interface{} with a *TokenTree generated from `Parse
 * jee may be very quirky in general.
 
 ### changes
+- **.0.1.1** Forked from github.com/nyxwulf/gojee
 - **.0.1.1** addition of $bool, $~bool, $num, $str, $now, $fmtTime, $parseTime. Fix for non-alphanumeric characters in JSON keys. 
 - **.0.1.0** initial release
